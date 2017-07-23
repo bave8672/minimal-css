@@ -1,0 +1,8 @@
+.content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.content.content--has-header {
+    padding-top: 3rem;
+}

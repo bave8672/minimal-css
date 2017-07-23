@@ -1,0 +1,72 @@
+.header {
+    background-color: #444;
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    color: #eee;
+}
+
+.header > .header-title,
+.header > .header-buttons,
+.header > .header-buttons .header-button,
+.header > .header-buttons .header-button--dropdown {
+    display: inline-block;
+    margin-right: -4px;
+    height: 100%;
+}
+
+.header > .header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.header > .header-buttons {
+    position: absolute;
+}
+
+.header > .header-buttons.header-buttons--right {
+    right: 0.5rem;
+}
+
+.header > .header-title,
+.header .header-button,
+.header .header-button--dropdown {
+    line-height: 3rem;
+    cursor: pointer;
+    color: #eee;
+    background-color: #444;
+}
+.header > .header-title,
+.header .header-button,
+.header .header-button--dropdown-parent {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.header .header-button:hover,
+.header .header-button--dropdown:hover:not(.header-button--dropdown-parent) {
+    background-color: #ddd;
+    color: #38d;
+}
+
+.header .header-button--dropdown {
+    position: relative;
+}
+
+.header .header-button--dropdown > .header-button--dropdown-children {
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.header .header-button--dropdown:hover > .header-button--dropdown-children {
+    visibility: visible;
+}
+
+.header .header-button--dropdown > .header-button--dropdown-children > .header-button {
+    display: block;
+    margin-right: 0;
+}
